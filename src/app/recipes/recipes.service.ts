@@ -32,4 +32,11 @@ export class RecipesService {
       return recipe.id === recipeId;
     })};
   }
+
+  deleteRecipe(recipeId: string) { // Sirve para filrar en el array cargarse todas las recetas que no cumplan con el ID
+    this.recipes = this.recipes.filter(recipe => {
+      return recipe.id !== recipeId;
+    });
+    console.log(this.recipes);
+  }
 }

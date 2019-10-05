@@ -8,11 +8,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: './recipes/recipes.module#RecipesPageModule' 
+        loadChildren: './recipes/recipes.module#RecipesPageModule'
       },
       {
         path: ':recipeId',
-        loadChildren: './recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule' 
+        loadChildren: './recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule'
 
       }
     ]
